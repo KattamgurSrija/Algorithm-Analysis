@@ -33,5 +33,15 @@ In this tree, the root is 20. Nodes in the left subtree (10, 5, 15) are less tha
 
 *Deleting a node with two children:
                                     Node 11 has two children (5 and 13).
+When deleting a node with two children, we can use either:
+                                                           Inorder Successor: The smallest value in the right subtree.
+                                                           Inorder Predecessor: The largest value in the left subtree.
 
+Both options maintain the BST structure, but inorder successor is commonly preferred.
+The inorder successor ensures minimal traversal changes, often requiring only a simple deletion from the right subtree.
+The replacement value is guaranteed to be larger than all nodes in the left subtree and smaller than all nodes in the right subtree.
+Inorder successor is chosen for simplicity and to maintain the BST order.
+The tree remains valid with all nodes correctly positioned after deletion.
+Each deletion case (leaf, one child, two children) follows the BST property of smaller values on the left and larger values on the right.
+                                                          
 
