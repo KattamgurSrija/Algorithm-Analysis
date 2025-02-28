@@ -180,5 +180,5 @@ int main() {
         runExperiment(size, numPairs, true, "symmetric_" + to_string(size) + ".csv");
     }
 
-    cout << "Experiments complete! Check the CSV files for IPL data.\n";
+    
 }
